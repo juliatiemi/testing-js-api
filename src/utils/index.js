@@ -1,4 +1,4 @@
-import url from 'url';
+import { InvalidUrlError } from '../errors';
 
 export const getOwnerAndRepo = url_ => {
     const { pathname } = new URL(url_);
@@ -6,5 +6,5 @@ export const getOwnerAndRepo = url_ => {
 };
 
 export const verifyUrl = url => {
-    if (!url.contains('github.com')) throw new Error();
+    if (!url.contains('github.com')) throw new InvalidUrlError();
 };
