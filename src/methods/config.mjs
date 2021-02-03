@@ -1,5 +1,7 @@
 import Axios from 'axios';
-import { GITHUB_API_URL } from '../constants';
+import { environment } from '../constants/index.mjs';
+
+const { GITHUB_API_URL } = environment;
 
 export const getAxiosCommonConfig = accessToken => {
     return Axios.create({

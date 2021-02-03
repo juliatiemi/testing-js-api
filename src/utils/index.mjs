@@ -1,4 +1,4 @@
-import { InvalidUrlError } from '../errors';
+import { InvalidUrlError } from '../errors/index.mjs';
 
 export const getOwnerAndRepo = url_ => {
     const { pathname } = new URL(url_);

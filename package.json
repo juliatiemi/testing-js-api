@@ -8,13 +8,14 @@
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7"
   },
   "devDependencies": {},
   "scripts": {
     "build": "rm -rf build --ignore node_modules,test --out-dir build",
     "test": "npm run test",
-    "start": "node build/index.js"
+    "start": "npx nodemon index.mjs"
   },
   "repository": {
     "type": "git",
