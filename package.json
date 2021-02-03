@@ -1,0 +1,37 @@
+{
+  "name": "testingjs-api",
+  "version": "1.0.0",
+  "description": "REST API for TestingJS website",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build": "rm -rf build --ignore node_modules,test --out-dir build",
+    "test": "npm run test",
+    "start": "node build/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juliatiemi/poc-api.git"
+  },
+  "keywords": [
+    "api",
+    "backend",
+    "testing",
+    "test",
+    "testingjs",
+    "javascript"
+  ],
+  "author": "Julia Tiemi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juliatiemi/poc-api/issues"
+  },
+  "homepage": "https://github.com/juliatiemi/poc-api#readme"
+}
