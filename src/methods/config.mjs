@@ -6,6 +6,6 @@ const { GITHUB_API_URL } = environment;
 export const getAxiosCommonConfig = accessToken => {
     return Axios.create({
         baseURL: `${GITHUB_API_URL}`,
-        headers: 'application/vnd.github.v3+json',
+        headers: { Accept: 'application/vnd.github.v3+json' },
     });
 };
