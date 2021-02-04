@@ -13,7 +13,7 @@ const createServer = () => {
     app.use(bodyParser.json({ limit: '50MB' }));
 
     app.use('/search', searchRouter);
-    app.listen(PORT, () => console.log('server running'));
+    app.listen(PORT, () => console.log(`server running on ${PORT}`));
 };
 
 (async () => {
