@@ -5,8 +5,11 @@ export const getOwnerAndRepo = url_ => {
     return pathname;
 };
 
-export const verifyUrl = url => {
-    if (!url.contains('github.com')) throw new InvalidUrlError();
+export const verifyUrl = (url, res) => {
+    console.log(url);
+    if (!url.includes('github.com')) {
+        InvalidUrlError(res);
+    }
 };
 
 export const getAllDependencies = (devDependencies, dependencies) => {

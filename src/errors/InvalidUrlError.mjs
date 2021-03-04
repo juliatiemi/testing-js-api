@@ -1,9 +1,8 @@
-export class InvalidUrlError extends Error {
-    constructor() {
-        const error = {
-            code: '001',
-            message: 'A URL deve ser um repositório do Gitlab.',
-        };
-        super(error, 400);
-    }
-}
+export const InvalidUrlError = res => {
+    const error = {
+        code: 1,
+        message: 'A URL deve ser um repositório do GitHub.',
+    };
+
+    res.json(error);
+};
